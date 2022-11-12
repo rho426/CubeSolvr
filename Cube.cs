@@ -31,17 +31,17 @@ namespace CubeSolver2
             
             for (int i = 2; i <= length; i++) {
                 switch (direction) {
-                    case "x":
+                    case "+x":
                     case "-x":
                         if (!direction.StartsWith('-')) { pos_X++; } else { pos_X--; }
                         if (pos_X > 3 || pos_X < 0) { return false; }
                         break;
-                    case "y":
+                    case "+y":
                     case "-y":
                         if (!direction.StartsWith('-')) { pos_Y++; } else { pos_Y--; }
                         if (pos_Y > 3 || pos_Y < 0) { return false; }
                         break;
-                    case "z":
+                    case "+z":
                     case "-z":
                         if (!direction.StartsWith('-')) { pos_Z++; } else { pos_Z--; }
                         if (pos_Z > 3 || pos_Z < 0) { return false; }
@@ -62,15 +62,15 @@ namespace CubeSolver2
 
             for (int i = 2; i <= length; i++) {
                 switch (direction) {
-                    case "x":
+                    case "+x":
                     case "-x":
                         if (!direction.StartsWith('-')) { posX++; } else { posX--; }
                         break;
-                    case "y":
+                    case "+y":
                     case "-y":
                         if (!direction.StartsWith('-')) { posY++; } else { posY--; }
                         break;
-                    case "z":
+                    case "+z":
                     case "-z":
                         if (!direction.StartsWith('-')) { posZ++; } else { posZ--; }
                         break;
@@ -85,15 +85,15 @@ namespace CubeSolver2
             for (int i = 1; i < length; i++) {
                 cubeArray[posX, posY, posZ] = false;
                 switch (direction) {
-                    case "x":
+                    case "+x":
                     case "-x":
                         if (!direction.StartsWith('-')) { posX--; } else { posX++; }
                         break;
-                    case "y":
+                    case "+y":
                     case "-y":
                         if (!direction.StartsWith('-')) { posY--; } else { posY++; }
                         break;
-                    case "z":
+                    case "+z":
                     case "-z":
                         if (!direction.StartsWith('-')) { posZ--; } else { posZ++; }
                         break;
